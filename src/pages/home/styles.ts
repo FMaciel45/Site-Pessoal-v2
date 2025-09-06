@@ -258,6 +258,12 @@ export const ProjectCard = styled.div`
       font-size: 0.8rem;
     }
   }
+
+  .project-buttons {
+    display: flex;
+    flex-direction:column;
+    gap: .7rem;
+  }
 `;
 
 export const ContactSection = styled(Section)`

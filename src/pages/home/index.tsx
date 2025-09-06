@@ -24,7 +24,7 @@ export function Home() {
           <div className="hero-text">
             <h1>Felipe Maciel - Desenvolvedor Fullstack</h1>
             <h2>Web, Mobile e Desktop</h2>
-            <p>Transformando ideias em soluções digitais inovadoras com React, Node.js e .NET</p>
+            <p>Transformando ideias em soluções digitais inovadoras com o desenvolvimento de software</p>
             <div className="cta-buttons">
               <Button>Download CV</Button>
               <Button variant="secondary">Entrar em contato</Button>
@@ -211,8 +211,10 @@ export function Home() {
                   <span>SQLite</span>
                 </div>
                 <p>Projeto frontend para pedidos em um restaurante. Desenvolvido com React e utilizando localStorage para armazenamento de dados.</p>
-                <Button variant="secondary">Repositório Frontend</Button>
-                <Button variant="secondary">Repositório Backend</Button>
+                <div className="project-buttons">
+                  <Button variant="secondary">Repositório Frontend</Button>
+                  <Button variant="secondary">Repositório Backend</Button>
+                </div>                
               </div>
             </ProjectCard>
 
@@ -228,8 +230,10 @@ export function Home() {
                   <span>SQLite</span>
                 </div>
                 <p>Projeto frontend para pedidos em um restaurante. Desenvolvido com React e utilizando localStorage para armazenamento de dados.</p>
-                <Button variant="secondary">Repositório Frontend</Button>
-                <Button variant="secondary">Repositório Backend</Button>
+                <div className="project-buttons">
+                  <Button variant="secondary">Repositório Frontend</Button>
+                  <Button variant="secondary">Repositório Backend</Button>
+                </div> 
               </div>
             </ProjectCard>
             
@@ -245,8 +249,10 @@ export function Home() {
                   <span>MySQL</span>
                 </div>
                 <p>Projeto pessoal de aplicação backend desenvolvido com ASP.NET Core para gerenciamento de fluxo de caixa.</p>
-                {/*<Button variant="secondary">Repositório Frontend</Button>*/}
-                <Button variant="secondary">Repositório Backend</Button>
+                <div className="project-buttons">
+                  {/*<Button variant="secondary">Repositório Frontend</Button>*/}
+                  <Button variant="secondary">Repositório Backend</Button>
+                </div> 
               </div>
             </ProjectCard>
         
@@ -262,7 +268,9 @@ export function Home() {
                   <span>Firebird</span>
                 </div>
                 <p>Projeto pessoal de aplicação desktop desenvolvida com Delphi para gerenciamento e controle de estoque.</p>
-                <Button variant="secondary">Ver Projeto</Button>
+                <div className="project-buttons">
+                  <Button variant="secondary">Ver projeto</Button>
+                </div> 
               </div>
             </ProjectCard>
 
@@ -278,7 +286,9 @@ export function Home() {
                   <span>Styled Components</span>
                 </div>
                 <p>Projeto de site com portfólio pessoal e informações de contato. Desenvolvido com React e TypeScript.</p>
-                <Button variant="secondary">Ver Projeto</Button>
+                <div className="project-buttons">
+                  <Button variant="secondary">Ver projeto</Button>
+                </div>
               </div>
             </ProjectCard>
 
