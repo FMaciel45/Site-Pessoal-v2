@@ -15,6 +15,7 @@ export default createGlobalStyle`
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_COLOR};
     color: ${({theme}) => theme.COLORS.FONT_COLOR};
     -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
   }
 
   body, input, button, textarea {
@@ -23,16 +24,38 @@ export default createGlobalStyle`
   }
 
   a, button {
-    font-size: 22px;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
     color: ${({theme}) => theme.COLORS.FONT_COLOR};
-
     text-decoration: none;
     cursor: pointer;
-    transition: filter 0.3s;
+    transition: all 0.3s ease;
   }
 
   a:hover, button:hover {
-    filter: brightness(0.8);
+    opacity: 0.8;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    section {
+      padding: 3rem 0;
+    }
   }
 `;

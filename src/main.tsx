@@ -10,13 +10,9 @@ import { Home } from './pages/home';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-
     <ThemeProvider theme={theme}> 
-
       <GlobalStyles />
       <Home />
-      
     </ThemeProvider>
-
   </StrictMode>
 );
