@@ -185,12 +185,12 @@ export const TechCard = styled.div`
     transform: translateY(-5px);
   }
 
-  .tech-icon-csharp, .tech-icon-js, .tech-icon-ts, .tech-icon-dart, .tech-icon-pascal, .tech-icon-dotnet, .tech-icon-node, .tech-icon-react, .tech-icon-flutter, .tech-icon-delphi {
+  .tech-icon-csharp, .tech-icon-js, .tech-icon-ts, .tech-icon-dart, .tech-icon-pascal, .tech-icon-dotnet, .tech-icon-node, .tech-icon-react, .tech-icon-flutter, .tech-icon-delphi, .tech-icon-postgres, .tech-icon-mysql, .tech-icon-firebase, .tech-icon-firebird, .tech-icon-sqlite {
     font-size: 4rem;
     margin-bottom: 1rem;
   }
 
-  .tech-icon-pascal {
+  .tech-icon-pascal, .tech-icon-firebird {
     font-size: 3rem;
   }
 

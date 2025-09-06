@@ -1,8 +1,9 @@
 import { Container, Header, HeroSection, Button, AboutSection, EducationItem, TechnologiesSection, TechGrid, TechCard, ProjectsSection, ProjectGrid, ProjectCard, ContactSection, Footer } from "./styles";
 
 import { TbBrandCSharp } from "react-icons/tb";
-import { SiJavascript, SiTypescript, SiDart, SiDotnet, SiFlutter, SiDelphi, SiLinkedin, SiGmail } from "react-icons/si";
+import { SiJavascript, SiTypescript, /*SiDart*/ SiDotnet, /*SiFlutter*/ SiDelphi, SiMysql, SiSqlite, SiLinkedin, SiGmail } from "react-icons/si";
 import { FaNode, FaReact, FaGithub } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 export function Home() {
   return (
@@ -103,28 +104,28 @@ export function Home() {
           <TechGrid>
 
             <TechCard>
-              <div className="tech-icon-csharp" style={{ color: "#9B4F96" }}><TbBrandCSharp/></div>
+              <div className="tech-icon-csharp" style={{ color: "#9B4F96" }}><TbBrandCSharp /></div>
               <h3>C#</h3>
               <p>Desenvolvimento de aplicações backend com .NET</p>
             </TechCard>
 
             <TechCard>
-              <div className="tech-icon-js" style={{ color: "#F7DF1E" }}><SiJavascript/></div>
+              <div className="tech-icon-js" style={{ color: "#F7DF1E" }}><SiJavascript /></div>
               <h3>JavaScript</h3>
               <p>Experiência em desenvolvimento frontend e backend com JavaScript</p>
             </TechCard>
 
             <TechCard>
-              <div className="tech-icon-ts" style={{ color: "#3178C6" }}><SiTypescript/></div>
+              <div className="tech-icon-ts" style={{ color: "#3178C6" }}><SiTypescript /></div>
               <h3>TypeScript</h3>
               <p>Desenvolvimento de aplicações tipadas e mais robustas</p>
             </TechCard>
 
-            <TechCard>
-              <div className="tech-icon-dart" style={{ color: "#0175C2" }}><SiDart/></div>
+            {/*<TechCard>
+              <div className="tech-icon-dart" style={{ color: "#0175C2" }}><SiDart /></div>
               <h3>Dart</h3>
               <p>Desenvolvimento de aplicações mobile e web com Flutter</p>
-            </TechCard>
+            </TechCard>*/}
 
             <TechCard>
               <div className="tech-icon-pascal" style={{ color: "#E76F00" }}>Pascal</div>
@@ -133,33 +134,57 @@ export function Home() {
             </TechCard>
 
             <TechCard>
-              <div className="tech-icon-dotnet" style={{ color: "#512BD4" }}><SiDotnet/></div>
+              <div className="tech-icon-dotnet" style={{ color: "#512BD4" }}><SiDotnet /></div>
               <h3>.NET</h3>
               <p>Framework para desenvolvimento de aplicações enterprise</p>
             </TechCard>
 
             <TechCard>
-              <div className="tech-icon-node" style={{ color: "#339933" }}><FaNode/></div>
+              <div className="tech-icon-node" style={{ color: "#339933" }}><FaNode /></div>
               <h3>Node.js</h3>
               <p>Runtime JavaScript para desenvolvimento backend</p>
             </TechCard>
 
             <TechCard>
-              <div className="tech-icon-react" style={{ color: "#61DAFB" }}><FaReact/></div>
+              <div className="tech-icon-react" style={{ color: "#61DAFB" }}><FaReact /></div>
               <h3>React</h3>
               <p>Biblioteca para construção de interfaces modernas</p>
             </TechCard>
 
-            <TechCard>
-              <div className="tech-icon-flutter" style={{ color: "#02569B" }}><SiFlutter/></div>
+            {/*<TechCard>
+              <div className="tech-icon-flutter" style={{ color: "#02569B" }}><SiFlutter /></div>
               <h3>Flutter</h3>
               <p>Framework para desenvolvimento multiplataforma</p>
+            </TechCard>*/}
+
+            <TechCard>
+              <div className="tech-icon-delphi" style={{ color: "#EE1F35" }}><SiDelphi /></div>
+              <h3>Delphi</h3>
+              <p>Desenvolvimento de aplicações desktop e enterprise</p>
             </TechCard>
 
             <TechCard>
-              <div className="tech-icon-delphi" style={{ color: "#EE1F35" }}><SiDelphi/></div>
-              <h3>Delphi</h3>
-              <p>Desenvolvimento de aplicações desktop e enterprise</p>
+              <div className="tech-icon-postgres" style={{ color: "#336791" }}><BiLogoPostgresql /></div>
+              <h3>PostgreSQL</h3>
+              <p>Banco de dados relacional open-source avançado</p>
+            </TechCard>
+
+            <TechCard>
+              <div className="tech-icon-mysql" style={{ color: "#4479A1" }}><SiMysql /></div>
+              <h3>MySQL</h3>
+              <p>Sistema de gerenciamento de banco de dados relacional popular</p>
+            </TechCard>
+
+            <TechCard>
+              <div className="tech-icon-firebird" style={{ color: "#D34332" }}>Firebird</div>
+              <h3>Firebird</h3>
+              <p>Banco de dados relacional open-source de alta performance</p>
+            </TechCard>
+
+            <TechCard>
+              <div className="tech-icon-sqlite" style={{ color: "#003B57" }}><SiSqlite /></div>
+              <h3>SQLite</h3>
+              <p>Banco de dados embutido, leve e autônomo</p>
             </TechCard>
 
           </TechGrid>
@@ -220,7 +245,7 @@ export function Home() {
                   <span>MySQL</span>
                 </div>
                 <p>Projeto pessoal de aplicação backend desenvolvido com ASP.NET Core para gerenciamento de fluxo de caixa.</p>
-                <Button variant="secondary">Repositório Frontend</Button>
+                {/*<Button variant="secondary">Repositório Frontend</Button>*/}
                 <Button variant="secondary">Repositório Backend</Button>
               </div>
             </ProjectCard>
