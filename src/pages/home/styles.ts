@@ -37,6 +37,7 @@ export const HeroSection = styled.section`
     display: flex;
     align-items: center;
     gap: 4rem;
+    margin-top: 40px;
 
     @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
       flex-direction: column;
@@ -142,10 +143,21 @@ export const AboutSection = styled(Section)`
 
 export const EducationItem = styled.div`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_COLOR};
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   border-left: 4px solid ${({ theme }) => theme.COLORS.ACCENT};
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .educationItem-img img {
+      width: 120px;
+      height: 120px;
+    }
+  }
 
   h3 {
     color: ${({ theme }) => theme.COLORS.ACCENT};

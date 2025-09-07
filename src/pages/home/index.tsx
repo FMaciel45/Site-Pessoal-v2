@@ -5,6 +5,11 @@ import { SiJavascript, SiTypescript, /*SiDart*/ SiDotnet, /*SiFlutter*/ SiDelphi
 import { FaNode, FaReact, FaGithub } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 
+import profilePicture from "../../assets/profile.jpeg";
+import IESBLogo from "../../assets/iesb_logo.jpeg";
+import RocketseatLogo from "../../assets/rocket.jpg";
+import CTJLogo from "../../assets/ctj.jpg";
+
 export function Home() {
   return (
     <Container>
@@ -42,7 +47,7 @@ export function Home() {
               justifyContent: "center",
               fontSize: "4rem"
             }}>
-              Foto perfil
+              <img src={profilePicture} alt="" />
             </div>
           </div>
         </div>
@@ -68,27 +73,55 @@ export function Home() {
           </div>
           
           <EducationItem>
-            <h3>Bacharelado - Ciência da Computação</h3>
-            <div className="institution">Instituto de Educação Superior de Brasília</div>
-            <div className="period">Início: Agosto/2021 | Previsão de conclusão: Junho/2025</div>
+            <div className="container">
+              <div className="educationItem-information">
+                <h3>Bacharelado - Ciência da Computação</h3>
+                <div className="institution">Instituto de Educação Superior de Brasília</div>
+                <div className="period">Início: Agosto/2021 | Previsão de conclusão: Junho/2025</div>
+              </div>
+              <div className="educationItem-img">
+                <img src={IESBLogo} alt="" />
+              </div> 
+            </div>
           </EducationItem>
           
           <EducationItem>
-            <h3>Curso de Inglês</h3>
-            <div className="institution">Casa Thomas Jefferson - Brasília/DF</div>
-            <div className="period">Inglês Avançado - Classe Expert 5B</div>
+            <div className="container">
+              <div className="educationItem-information">
+                <h3>Curso de Inglês</h3>
+                <div className="institution">Casa Thomas Jefferson - Brasília/DF</div>
+                <div className="period">Inglês Avançado - Classe Expert 5B</div>
+              </div>
+              <div className="educationItem-img">
+                <img src={CTJLogo} alt="" />
+              </div> 
+            </div>
           </EducationItem>
           
           <EducationItem>
-            <h3>Formação Explorer Fullstack</h3>
-            <div className="institution">Rocketseat</div>
-            <div className="period">Início: Fevereiro/2024 | Conclusão: Fevereiro/2025</div>
+            <div className="container">
+              <div className="educationItem-information">
+                <h3>Formação Explorer Fullstack</h3>
+                <div className="institution">Rocketseat</div>
+                <div className="period">Início: Fevereiro/2024 | Conclusão: Fevereiro/2025</div>
+              </div>
+              <div className="educationItem-img">
+                <img src={RocketseatLogo} alt="" />
+              </div> 
+            </div>            
           </EducationItem>
           
           <EducationItem>
-            <h3>Formação C# / .NET</h3>
-            <div className="institution">Rocketseat</div>
-            <div className="period">Início: maio/2025 | Conclusão: Junho/2025</div>
+            <div className="container">
+              <div className="educationItem-information">
+                <h3>Formação C# / .NET</h3>
+                <div className="institution">Rocketseat</div>
+                <div className="period">Início: maio/2025 | Conclusão: Junho/2025</div>
+              </div>
+              <div className="educationItem-img">
+                <img src={RocketseatLogo} alt="" />
+              </div> 
+            </div>  
           </EducationItem>
 
         </div>
