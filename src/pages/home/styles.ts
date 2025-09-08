@@ -29,8 +29,7 @@ export const Header = styled.header`
 `;
 
 export const HeroSection = styled.section`
-  padding-top: 8rem;
-  padding-bottom: 4rem;
+  padding: 8rem 2rem 4rem 2rem;
   background: linear-gradient(180deg, ${({ theme }) => theme.COLORS.BACKGROUND_COLOR} 0%, ${({ theme }) => theme.COLORS.BACKGROUND_COLOR2} 100%);
   
   .hero-content {
@@ -75,9 +74,10 @@ export const HeroSection = styled.section`
     justify-content: center;
     
     img {
-      width: 100%;
-      max-width: 400px;
+      width: 350px;
+      height: 350px;
       border-radius: 50%;
+      object-fit: cover;
       border: 4px solid ${({ theme }) => theme.COLORS.ACCENT};
     }
   }
@@ -237,15 +237,22 @@ export const ProjectCard = styled.div`
 
   .project-image {
     width: 100%;
-    height: 200px;
+    height: 330px;
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_COLOR2};
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+  
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .project-content {
     padding: 1.5rem;
+    margin-top: 24px;
     
     h3 {
       margin-bottom: 0.5rem;

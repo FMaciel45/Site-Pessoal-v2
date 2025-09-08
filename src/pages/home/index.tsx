@@ -1,7 +1,7 @@
 import { Container, Header, HeroSection, Button, AboutSection, EducationItem, TechnologiesSection, TechGrid, TechCard, ProjectsSection, ProjectGrid, ProjectCard, ContactSection, Footer } from "./styles";
 
 import { TbBrandCSharp } from "react-icons/tb";
-import { SiJavascript, SiTypescript, /*SiDart*/ SiDotnet, /*SiFlutter*/ SiDelphi, SiMysql, SiSqlite, SiLinkedin, SiGmail } from "react-icons/si";
+import { SiJavascript, SiTypescript, /*SiDart*/ SiDotnet, /*SiFlutter*/ SiDelphi, SiMysql, /*SiFirebase*/  SiSqlite, SiLinkedin, SiGmail } from "react-icons/si";
 import { FaNode, FaReact, FaGithub } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 
@@ -9,6 +9,10 @@ import profilePicture from "../../assets/profile.jpeg";
 import IESBLogo from "../../assets/iesb_logo.jpeg";
 import RocketseatLogo from "../../assets/rocket.jpg";
 import CTJLogo from "../../assets/ctj.jpg";
+import FoodEx from "../../assets/FoodEx.png";
+import RocketN from "../../assets/RocketN.png";
+import Site from "../../assets/site.png";
+import CashFlow from "../../assets/cashflowprint.png";
 
 export function Home() {
   return (
@@ -36,19 +40,7 @@ export function Home() {
             </div>
           </div>
           <div className="hero-image">
-            {/* Placeholder para imagem - substitua por sua foto */}
-            <div style={{ 
-              width: "300px", 
-              height: "300px", 
-              borderRadius: "50%", 
-              backgroundColor: "#2d2d2d", 
-              display: "flex", 
-              alignItems: "center", 
-              justifyContent: "center",
-              fontSize: "4rem"
-            }}>
-              <img src={profilePicture} alt="" />
-            </div>
+            <img src={profilePicture} alt="Felipe Maciel" />
           </div>
         </div>
       </HeroSection>
@@ -90,7 +82,7 @@ export function Home() {
               <div className="educationItem-information">
                 <h3>Curso de Inglês</h3>
                 <div className="institution">Casa Thomas Jefferson - Brasília/DF</div>
-                <div className="period">Inglês Avançado - Classe Expert 5B</div>
+                <div className="period">Inglês Avançado - Class Expert 5B</div>
               </div>
               <div className="educationItem-img">
                 <img src={CTJLogo} alt="" />
@@ -214,6 +206,12 @@ export function Home() {
               <p>Banco de dados relacional open-source de alta performance</p>
             </TechCard>
 
+            {/*<TechCard>
+              <div className="tech-icon-firebase" style={{ color: "#FFCA28" }}><SiFirebase /></div>
+              <h3>Firebase</h3>
+              <p>Plataforma para desenvolvimento de aplicativos móveis e web</p>
+            </TechCard>*/}
+
             <TechCard>
               <div className="tech-icon-sqlite" style={{ color: "#003B57" }}><SiSqlite /></div>
               <h3>SQLite</h3>
@@ -234,7 +232,7 @@ export function Home() {
           <ProjectGrid>
             <ProjectCard>
               <div className="project-image">
-                
+                <img src={FoodEx} alt="" />  
               </div>
               <div className="project-content">
                 <h3>Food Explorer</h3>
@@ -243,7 +241,7 @@ export function Home() {
                   <span>Node.js</span>
                   <span>SQLite</span>
                 </div>
-                <p>Projeto frontend para pedidos em um restaurante. Desenvolvido com React e utilizando localStorage para armazenamento de dados.</p>
+                <p>Projeto pessoal fullstack Web para pedidos em um restaurante. Desenvolvido com NodeJS, ReactJS e JavaScript e utilizado SQLite para armazenamento local de dados.</p>
                 <div className="project-buttons">
                   <Button variant="secondary">Repositório Frontend</Button>
                   <Button variant="secondary">Repositório Backend</Button>
@@ -253,7 +251,7 @@ export function Home() {
 
             <ProjectCard>
               <div className="project-image">
-                
+                <img src={RocketN} alt="" />  
               </div>
               <div className="project-content">
                 <h3>Rocket Notes</h3>
@@ -262,7 +260,7 @@ export function Home() {
                   <span>Node.js</span>
                   <span>SQLite</span>
                 </div>
-                <p>Projeto frontend para pedidos em um restaurante. Desenvolvido com React e utilizando localStorage para armazenamento de dados.</p>
+                <p>Projeto pessoal fullstack Web para armazenamento de notas/lembretes pessoais. Desenvolvido com NodeJS, ReactJS e JavaScript e utilizado SQLite para armazenamento local de dados.</p>
                 <div className="project-buttons">
                   <Button variant="secondary">Repositório Frontend</Button>
                   <Button variant="secondary">Repositório Backend</Button>
@@ -272,7 +270,7 @@ export function Home() {
             
             <ProjectCard>
               <div className="project-image">
-                
+                <img src={CashFlow} alt="" />
               </div>
               <div className="project-content">
                 <h3>CashFlow</h3>
@@ -280,8 +278,13 @@ export function Home() {
                   <span>C#</span>
                   <span>.NET</span>
                   <span>MySQL</span>
+                  <span>Dart</span>
+                  <span>Flutter</span>
+                  <span>Firebase</span>
+
                 </div>
-                <p>Projeto pessoal de aplicação backend desenvolvido com ASP.NET Core para gerenciamento de fluxo de caixa.</p>
+                <p>Projeto pessoal de aplicação backend para gerenciamento de fluxo de caixa. Desenvolvido com ASP.NET Core (C#) e utilizado MySQL para o armazenamento de dados.</p>
+                {/*<p>Projeto pessoal fullstack mobile para controle de despesas pessoais e fluxo de caixa. Desenvolvido com ASP.NET Core (C#) e Flutter e utilizado MySQL para armazenamento de dados.</p>*/}
                 <div className="project-buttons">
                   {/*<Button variant="secondary">Repositório Frontend</Button>*/}
                   <Button variant="secondary">Repositório Backend</Button>
@@ -300,7 +303,7 @@ export function Home() {
                   <span>Pascal</span>
                   <span>Firebird</span>
                 </div>
-                <p>Projeto pessoal de aplicação desktop desenvolvida com Delphi para gerenciamento e controle de estoque.</p>
+                <p>Projeto pessoal de aplicação desktop para gerenciamento e controle de estoque. Desenvolvida com Delphi e utilizado Firebird para armazenamento de dados.</p>
                 <div className="project-buttons">
                   <Button variant="secondary">Ver projeto</Button>
                 </div> 
@@ -309,7 +312,7 @@ export function Home() {
 
             <ProjectCard>
               <div className="project-image">
-                
+                <img src={Site} alt="" />
               </div>
               <div className="project-content">
                 <h3>Site Pessoal</h3>
