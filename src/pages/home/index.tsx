@@ -68,7 +68,7 @@ export function Home() {
             <div className="container">
               <div className="educationItem-information">
                 <h3>Bacharelado - Ciência da Computação</h3>
-                <div className="institution">Instituto de Educação Superior de Brasília</div>
+                <div className="institution">Instituto de Educação Superior de Brasília - IESB</div>
                 <div className="period">Início: Agosto/2021 | Previsão de conclusão: Junho/2025</div>
               </div>
               <div className="educationItem-img">
@@ -241,7 +241,7 @@ export function Home() {
                   <span>Node.js</span>
                   <span>SQLite</span>
                 </div>
-                <p>Projeto pessoal fullstack Web para pedidos em um restaurante. Desenvolvido com NodeJS, ReactJS e JavaScript e utilizado SQLite para armazenamento local de dados.</p>
+                <p>Projeto pessoal fullstack Web para pedidos em um restaurante fictício. Desenvolvido com NodeJS, ReactJS e JavaScript e utilizado SQLite para armazenamento local de dados.</p>
                 <div className="project-buttons">
                   <Button variant="secondary">Repositório Frontend</Button>
                   <Button variant="secondary">Repositório Backend</Button>
@@ -279,8 +279,8 @@ export function Home() {
                   <span>.NET</span>
                   <span>MySQL</span>
                   <span>Dart</span>
-                  <span>Flutter</span>
-                  <span>Firebase</span>
+                  {/*<span>Flutter</span>
+                  <span>Firebase</span>*/}
 
                 </div>
                 <p>Projeto pessoal de aplicação backend para gerenciamento de fluxo de caixa. Desenvolvido com ASP.NET Core (C#) e utilizado MySQL para o armazenamento de dados.</p>
@@ -321,7 +321,8 @@ export function Home() {
                   <span>TypeScript</span>
                   <span>Styled Components</span>
                 </div>
-                <p>Projeto de site com portfólio pessoal e informações de contato. Desenvolvido com React e TypeScript.</p>
+                <p>Projeto de site com portfólio pessoal e informações de contato. Desenvolvido com 
+                React, TypeScript e a biblioteca Styled Components para estilização.</p>
                 <div className="project-buttons">
                   <Button variant="secondary">Ver projeto</Button>
                 </div>

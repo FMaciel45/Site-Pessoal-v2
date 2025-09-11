@@ -292,16 +292,20 @@ export const ContactSection = styled(Section)`
   .contact-content {
     max-width: 600px;
     margin: 0 auto;
+
+    p {
+      font-size: 1.15rem;
+    }
   }
 
   .social-links {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
     margin: 2rem;
 
     a {
-      font-size: 3rem;
+      font-size: 3.5rem;
       transition: transform 0.3s ease;
 
       &:hover {
@@ -313,7 +317,7 @@ export const ContactSection = styled(Section)`
 
 export const Footer = styled.footer`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_COLOR2};
-  padding: 2rem 3rem;
+  padding: 2rem;
   text-align: center;
   border-top: 1px solid ${({ theme }) => theme.COLORS.BORDER_COLOR};
 
