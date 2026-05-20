@@ -236,34 +236,11 @@ export const ProjectsSection = styled(Section)`
 `;
 
 export const ProjectGrid = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-`;
-
-export const ProjectSectionLineOne = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  grid-template-columns: repeat(4, minmax(380px, 1fr));
   gap: 2rem;
   justify-content: center;
   width: 100%;
-`;
-
-export const ProjectSectionLineTwo = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 1fr));
-  gap: 2rem;
-  justify-content: center;
-  width: 100%;
-
-  & > * {
-    width: 100%;
-  }
-
-  & > *:only-child {
-    grid-column: 2 / 3;
-  }
 `;
 
 export const ProjectCard = styled.div`

@@ -1,4 +1,4 @@
-import { Container, Header, HeroSection, Button, AboutSection, EducationItem, TechnologiesSection, TechsSection, TechsSectionLineOne, TechsSectionLineTwo, TechCard, ProjectsSection, ProjectGrid, ProjectSectionLineOne, ProjectSectionLineTwo, ProjectCard, ContactSection, Footer } from "./styles";
+import { Container, Header, HeroSection, Button, AboutSection, EducationItem, TechnologiesSection, TechsSection, TechsSectionLineOne, TechsSectionLineTwo, TechCard, ProjectsSection, ProjectGrid, ProjectCard, ContactSection, Footer } from "./styles";
 
 import { TbBrandCSharp } from "react-icons/tb";
 import { SiDart, SiDotnet, SiFlutter, SiLinkedin, SiGmail } from "react-icons/si";
@@ -71,7 +71,7 @@ export function Home() {
               <div className="educationItem-information">
                 <h3>Bacharelado - Ciência da Computação</h3>
                 <div className="institution">Instituto de Educação Superior de Brasília - IESB</div>
-                <div className="period">Início: Agosto/2021 | Previsão de conclusão: Junho/2025</div>
+                <div className="period">Início: Agosto/2021 | Previsão de conclusão: Junho/2026</div>
               </div>
               <div className="educationItem-img">
                 <img src={IESBLogo} alt="" />
@@ -124,7 +124,7 @@ export function Home() {
       <TechnologiesSection id="tech">
         <div className="container">
           <div className="section-title">
-            <h2>Tecnologias com que trabalho</h2>
+            <h2>Tecnologias com que trabalho atualmente</h2>
             <div className="divider"></div>
           </div>
 
@@ -180,91 +180,87 @@ export function Home() {
           </div>
 
           <ProjectGrid>
-            <ProjectSectionLineOne>
 
-              <ProjectCard>
-                <div className="project-image">
-                  <img src={FoodEx} alt="" />
+            <ProjectCard>
+              <div className="project-image">
+                <img src={FoodEx} alt="" />
+              </div>
+              <div className="project-content">
+                <h3>Food Explorer</h3>
+                <div className="project-tech">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>SQLite</span>
                 </div>
-                <div className="project-content">
-                  <h3>Food Explorer</h3>
-                  <div className="project-tech">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>SQLite</span>
-                  </div>
-                  <p>Projeto pessoal fullstack Web para pedidos em um restaurante fictício. Desenvolvido com NodeJS, ReactJS e JavaScript e utilizado SQLite para armazenamento local de dados.</p>
-                  <div className="project-buttons">
-                    <Button variant="secondary">Repositório Frontend</Button>
-                    <Button variant="secondary">Repositório Backend</Button>
-                  </div>
+                <p>Projeto pessoal fullstack Web para pedidos em um restaurante fictício. Desenvolvido com NodeJS, ReactJS e JavaScript e utilizado SQLite para armazenamento local de dados.</p>
+                <div className="project-buttons">
+                  <Button variant="secondary">Repositório Frontend</Button>
+                  <Button variant="secondary">Repositório Backend</Button>
                 </div>
-              </ProjectCard>
+              </div>
+            </ProjectCard>
 
-              <ProjectCard>
-                <div className="project-image">
-                  <img src={RocketN} alt="" />
+            <ProjectCard>
+              <div className="project-image">
+                <img src={RocketN} alt="" />
+              </div>
+              <div className="project-content">
+                <h3>Rocket Notes</h3>
+                <div className="project-tech">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>SQLite</span>
                 </div>
-                <div className="project-content">
-                  <h3>Rocket Notes</h3>
-                  <div className="project-tech">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>SQLite</span>
-                  </div>
-                  <p>Projeto pessoal fullstack Web para armazenamento de notas/lembretes pessoais. Desenvolvido com NodeJS, ReactJS e JavaScript e utilizado SQLite para armazenamento local de dados.</p>
-                  <div className="project-buttons">
-                    <Button variant="secondary">Repositório Frontend</Button>
-                    <Button variant="secondary">Repositório Backend</Button>
-                  </div>
+                <p>Projeto pessoal fullstack Web para armazenamento de notas/lembretes pessoais. Desenvolvido com NodeJS, ReactJS e JavaScript e utilizado SQLite para armazenamento local de dados.</p>
+                <div className="project-buttons">
+                  <Button variant="secondary">Repositório Frontend</Button>
+                  <Button variant="secondary">Repositório Backend</Button>
                 </div>
-              </ProjectCard>
+              </div>
+            </ProjectCard>
 
-              <ProjectCard>
-                <div className="project-image">
-                  <img src={CashFlow} alt="" />
-                </div>
-                <div className="project-content">
-                  <h3>CashFlow</h3>
-                  <div className="project-tech">
-                    <span>C#</span>
-                    <span>.NET</span>
-                    <span>MySQL</span>
-                    <span>Dart</span>
-                    {/*<span>Flutter</span>
+            <ProjectCard>
+              <div className="project-image">
+                <img src={CashFlow} alt="" />
+              </div>
+              <div className="project-content">
+                <h3>CashFlow</h3>
+                <div className="project-tech">
+                  <span>C#</span>
+                  <span>.NET</span>
+                  <span>MySQL</span>
+                  <span>Dart</span>
+                  {/*<span>Flutter</span>
                   <span>Firebase</span>*/}
 
-                  </div>
-                  <p>Projeto pessoal de aplicação backend para gerenciamento de fluxo de caixa. Desenvolvido com ASP.NET Core (C#) e utilizado MySQL para o armazenamento de dados.</p>
-                  {/*<p>Projeto pessoal fullstack mobile para controle de despesas pessoais e fluxo de caixa. Desenvolvido com ASP.NET Core (C#) e Flutter e utilizado MySQL para armazenamento de dados.</p>*/}
-                  <div className="project-buttons">
-                    {/*<Button variant="secondary">Repositório Frontend</Button>*/}
-                    <Button variant="secondary">Repositório Backend</Button>
-                  </div>
                 </div>
-              </ProjectCard>
-            </ProjectSectionLineOne>
+                <p>Projeto pessoal de aplicação backend para gerenciamento de fluxo de caixa. Desenvolvido com ASP.NET Core (C#) e utilizado MySQL para o armazenamento de dados.</p>
+                {/*<p>Projeto pessoal fullstack mobile para controle de despesas pessoais e fluxo de caixa. Desenvolvido com ASP.NET Core (C#) e Flutter e utilizado MySQL para armazenamento de dados.</p>*/}
+                <div className="project-buttons">
+                  {/*<Button variant="secondary">Repositório Frontend</Button>*/}
+                  <Button variant="secondary">Repositório Backend</Button>
+                </div>
+              </div>
+            </ProjectCard>
 
-            <ProjectSectionLineTwo>
-              <ProjectCard>
-                <div className="project-image">
-                  <img src={Site} alt="" />
+            <ProjectCard>
+              <div className="project-image">
+                <img src={Site} alt="" />
+              </div>
+              <div className="project-content">
+                <h3>Site Pessoal</h3>
+                <div className="project-tech">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Styled Components</span>
                 </div>
-                <div className="project-content">
-                  <h3>Site Pessoal</h3>
-                  <div className="project-tech">
-                    <span>React</span>
-                    <span>TypeScript</span>
-                    <span>Styled Components</span>
-                  </div>
-                  <p>Projeto de site com portfólio pessoal e informações de contato. Desenvolvido com
-                    React, TypeScript e a biblioteca Styled Components para estilização.</p>
-                  <div className="project-buttons">
-                    <Button variant="secondary">Ver projeto</Button>
-                  </div>
+                <p>Projeto de site com portfólio pessoal e informações de contato. Desenvolvido com
+                  React, TypeScript e a biblioteca Styled Components para estilização.</p>
+                <div className="project-buttons">
+                  <Button variant="secondary">Ver projeto</Button>
                 </div>
-              </ProjectCard>
-            </ProjectSectionLineTwo>
+              </div>
+            </ProjectCard>
 
           </ProjectGrid>
         </div>
