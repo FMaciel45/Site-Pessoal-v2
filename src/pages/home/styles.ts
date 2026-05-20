@@ -96,16 +96,16 @@ export const Button = styled.button<{ variant?: 'primary' | 'secondary' }>`
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 600;
-  border: ${({ variant, theme }) => 
+  border: ${({ variant, theme }) =>
     variant === 'secondary' ? `1px solid ${theme.COLORS.ACCENT}` : 'none'};
-  background: ${({ variant, theme }) => 
+  background: ${({ variant, theme }) =>
     variant === 'secondary' ? 'transparent' : theme.COLORS.BUTTON_BACKGROUND};
-  color: ${({ variant, theme }) => 
+  color: ${({ variant, theme }) =>
     variant === 'secondary' ? theme.COLORS.ACCENT : theme.COLORS.FONT_COLOR};
   
   &:hover {
-    background: ${({ variant, theme }) => 
-      variant === 'secondary' ? 'rgba(59, 130, 246, 0.1)' : theme.COLORS.BUTTON_HOVER};
+    background: ${({ variant, theme }) =>
+    variant === 'secondary' ? 'rgba(59, 130, 246, 0.1)' : theme.COLORS.BUTTON_HOVER};
   }
 `;
 
@@ -179,11 +179,27 @@ export const TechnologiesSection = styled(Section)`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_COLOR};
 `;
 
-export const TechGrid = styled.div`
+export const TechsSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+`;
+
+export const TechsSectionLineOne = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const TechsSectionLineTwo = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
 `;
 
 export const TechCard = styled.div`
@@ -197,7 +213,7 @@ export const TechCard = styled.div`
     transform: translateY(-5px);
   }
 
-  .tech-icon-csharp, .tech-icon-js, .tech-icon-ts, .tech-icon-dart, .tech-icon-pascal, .tech-icon-dotnet, .tech-icon-node, .tech-icon-react, .tech-icon-flutter, .tech-icon-delphi, .tech-icon-postgres, .tech-icon-mysql, .tech-icon-firebase, .tech-icon-firebird, .tech-icon-sqlite {
+  .tech-icon-dotnet, .tech-icon-flutter, .tech-icon-postgres, .tech-icon-csharp, .tech-icon-dart, .tech-icon-sql {
     font-size: 4rem;
     margin-bottom: 1rem;
   }
@@ -220,9 +236,34 @@ export const ProjectsSection = styled(Section)`
 `;
 
 export const ProjectGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
+  align-items: center;
+`;
+
+export const ProjectSectionLineOne = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const ProjectSectionLineTwo = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+
+  & > * {
+    width: 100%;
+  }
+
+  & > *:only-child {
+    grid-column: 2 / 3;
+  }
 `;
 
 export const ProjectCard = styled.div`
