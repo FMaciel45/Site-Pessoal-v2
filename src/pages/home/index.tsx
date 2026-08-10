@@ -1,4 +1,4 @@
-import { Container, Header, HeroSection, Button, AboutSection, EducationItem, TechnologiesSection, TechsSection, TechsSectionLineOne, TechsSectionLineTwo, TechCard, ProjectsSection, ProjectGrid, ProjectCard, ContactSection, Footer } from "./styles";
+import { Container, Header, HeroSection, Button, AboutSection, AboutDescription, EducationItem, TechnologiesSection, TechsSection, TechsSectionLineOne, TechsSectionLineTwo, TechCard, TechIcon, ProjectsSection, ProjectGrid, ProjectCard, ContactSection, Footer } from "./styles";
 
 import { TbBrandCSharp } from "react-icons/tb";
 import { SiDart, SiDotnet, SiFlutter, SiLinkedin, SiGmail } from "react-icons/si";
@@ -34,7 +34,7 @@ export function Home() {
         <div className="container hero-content">
           <div className="hero-text">
             <h1>Felipe Maciel - Desenvolvedor Fullstack</h1>
-            <h2>Web, Mobile e Desktop</h2>
+            <h2>Web e Mobile</h2>
             <p>Transformando ideias em soluções digitais inovadoras com o desenvolvimento de software</p>
             <div className="cta-buttons">
               <Button>Download CV</Button>
@@ -55,11 +55,11 @@ export function Home() {
             <div className="divider"></div>
           </div>
 
-          <p style={{ textAlign: "center", marginBottom: "3rem", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto 3rem" }}>
+          <AboutDescription>
             Desenvolvedor Web Fullstack e estudante de Ciência da Computação com previsão de formatura para 06/2026.
             Tenho cerca de 1 ano de experiência com desenvolvimento Web por meio de projetos pessoais e acadêmicos.
-            Além disso, hoje atuo profissionalmente como desenvolvedor Web, Mobile e Desktop. Dessa forma, busco aprender constantemente novas tecnologias para me profissionalizar como desenvolvedor.
-          </p>
+            Além disso, hoje atuo profissionalmente como desenvolvedor Web e Mobile. Dessa forma, busco aprender constantemente novas tecnologias para me profissionalizar como desenvolvedor.
+          </AboutDescription>
 
           <div className="section-title">
             <h3>Formações em andamento e concluídas</h3>
@@ -131,19 +131,19 @@ export function Home() {
           <TechsSection>
             <TechsSectionLineOne>
               <TechCard>
-                <div className="tech-icon-dotnet" style={{ color: "#512BD4" }}><SiDotnet /></div>
+                <TechIcon color="#512BD4"><SiDotnet /></TechIcon>
                 <h3>.NET</h3>
                 <p>Framework para desenvolvimento de aplicações enterprise</p>
               </TechCard>
 
               <TechCard>
-                <div className="tech-icon-flutter" style={{ color: "#02569B" }}><SiFlutter /></div>
+                <TechIcon color="#02569B"><SiFlutter /></TechIcon>
                 <h3>Flutter</h3>
                 <p>Framework para desenvolvimento multiplataforma</p>
               </TechCard>
 
               <TechCard>
-                <div className="tech-icon-postgres" style={{ color: "#336791" }}><BiLogoPostgresql /></div>
+                <TechIcon color="#336791"><BiLogoPostgresql /></TechIcon>
                 <h3>PostgreSQL</h3>
                 <p>Banco de dados relacional open-source avançado</p>
               </TechCard>
@@ -151,19 +151,19 @@ export function Home() {
 
             <TechsSectionLineTwo>
               <TechCard>
-                <div className="tech-icon-csharp" style={{ color: "#9B4F96" }}><TbBrandCSharp /></div>
+                <TechIcon color="#9B4F96"><TbBrandCSharp /></TechIcon>
                 <h3>C#</h3>
                 <p>Desenvolvimento de aplicações backend com .NET</p>
               </TechCard>
 
               <TechCard>
-                <div className="tech-icon-dart" style={{ color: "#0175C2" }}><SiDart /></div>
+                <TechIcon color="#0175C2"><SiDart /></TechIcon>
                 <h3>Dart</h3>
                 <p>Desenvolvimento de aplicações mobile e web com Flutter</p>
               </TechCard>
 
               <TechCard>
-                <div className="tech-icon-sql" style={{ color: "#FFFFFF" }}><BsFiletypeSql /></div>
+                <TechIcon color="#FFFFFF"><BsFiletypeSql /></TechIcon>
                 <h3>SQL</h3>
                 <p>Manipulação de banco de dados</p>
               </TechCard>
@@ -192,7 +192,7 @@ export function Home() {
                   <span>Node.js</span>
                   <span>SQLite</span>
                 </div>
-                <p>Projeto pessoal fullstack Web para pedidos em um restaurante fictício. Desenvolvido com NodeJS, ReactJS e JavaScript e utilizado SQLite para armazenamento local de dados.</p>
+                <p>Projeto pessoal fullstack Web para pedidos em um restaurante fictício. Desenvolvido com NodeJS, ReactJS e JavaScript, com a utilização de SQLite para armazenamento local de dados.</p>
                 <div className="project-buttons">
                   <Button variant="secondary">Repositório Frontend</Button>
                   <Button variant="secondary">Repositório Backend</Button>
@@ -254,8 +254,7 @@ export function Home() {
                   <span>TypeScript</span>
                   <span>Styled Components</span>
                 </div>
-                <p>Projeto de site com portfólio pessoal e informações de contato. Desenvolvido com
-                  React, TypeScript e a biblioteca Styled Components para estilização.</p>
+                <p>Projeto de site com meu histórico acadêmico e profissional, portfólio pessoal e minhas informações de contato. Desenvolvido com React, TypeScript e a biblioteca Styled Components para estilização.</p>
                 <div className="project-buttons">
                   <Button variant="secondary">Ver projeto</Button>
                 </div>
@@ -277,9 +276,9 @@ export function Home() {
             <p>Estou animado para ser o próximo desenvolvedor do time da sua empresa. Entre em contato comigo!</p>
 
             <div className="social-links">
-              <a href="#" title="GitHub"><FaGithub /></a>
-              <a href="#" title="LinkedIn"><SiLinkedin /></a>
-              <a href="#" title="E-mail"><SiGmail /></a>
+              <a href="https://github.com/FMaciel45" target="_blank" rel="noreferrer" title="GitHub"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/f-maciel/" target="_blank" rel="noreferrer" title="LinkedIn"><SiLinkedin /></a>
+              <a href="mailto:fesoaresma@gmail.com" title="E-mail"><SiGmail /></a>
             </div>
           </div>
         </div>

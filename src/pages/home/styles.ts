@@ -141,6 +141,13 @@ export const AboutSection = styled(Section)`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_COLOR2};
 `;
 
+export const AboutDescription = styled.p`
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+`;
+
 export const EducationItem = styled.div`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_COLOR};
   padding: 1rem;
@@ -213,22 +220,15 @@ export const TechCard = styled.div`
     transform: translateY(-5px);
   }
 
-  .tech-icon-dotnet, .tech-icon-flutter, .tech-icon-postgres, .tech-icon-csharp, .tech-icon-dart, .tech-icon-sql {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-
-  .tech-icon-pascal, .tech-icon-firebird {
-    font-size: 3rem;
-  }
-
-  .tech-icon-dotnet {
-    margin-bottom: 0rem;
-  }
-
   h3 {
     margin-bottom: 0.5rem;
   }
+`;
+
+export const TechIcon = styled.div<{ color: string }>`
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: ${({ color }) => color};
 `;
 
 export const ProjectsSection = styled(Section)`
