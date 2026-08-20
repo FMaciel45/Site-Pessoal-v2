@@ -1,8 +1,8 @@
 import { Container, Header, HeroSection, Button, AboutSection, AboutDescription, EducationItem, TechnologiesSection, TechsSection, TechsSectionLineOne, TechsSectionLineTwo, TechCard, TechIcon, ProjectsSection, ProjectGrid, ProjectCard, ContactSection, Footer } from "./styles";
 
+import { SiDotnet, SiFlutter, SiTypescript, SiDart, SiLinkedin, SiGmail } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
-import { SiDart, SiDotnet, SiFlutter, SiLinkedin, SiGmail } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaAngular } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { BsFiletypeSql } from "react-icons/bs";
 
@@ -54,9 +54,7 @@ export function Home() {
           </div>
 
           <AboutDescription>
-            Desenvolvedor Web Fullstack e estudante de Ciência da Computação com previsão de formatura para 06/2026.
-            Tenho cerca de 1 ano de experiência com desenvolvimento Web por meio de projetos pessoais e acadêmicos.
-            Além disso, hoje atuo profissionalmente como desenvolvedor Web e Mobile. Dessa forma, busco aprender constantemente novas tecnologias para me profissionalizar como desenvolvedor.
+            Desenvolvedor Full Stack com experiência profissional no desenvolvimento de aplicações web e mobile para o mercado corporativo. Atualmente atuo com .NET, Angular e Flutter, construindo soluções escaláveis e performáticas. Graduado em Ciência da Computação (IESB, 2026), busco constantemente aprimorar minhas habilidades em arquitetura de software e boas práticas para entregar código limpo e de valor para o negócio.
           </AboutDescription>
 
           <div className="section-title">
@@ -69,7 +67,7 @@ export function Home() {
               <div className="educationItem-information">
                 <h3>Bacharelado - Ciência da Computação</h3>
                 <div className="institution">Instituto de Educação Superior de Brasília - IESB</div>
-                <div className="period">Início: Agosto/2021 | Previsão de conclusão: Junho/2026</div>
+                <div className="period">Início: Agosto/2021 | Conclusão: Agosto/2026</div>
               </div>
               <div className="educationItem-img">
                 <img src={IESBLogo} alt="" />
@@ -135,6 +133,12 @@ export function Home() {
               </TechCard>
 
               <TechCard>
+                <TechIcon color="#E40035"><FaAngular /></TechIcon>
+                <h3>AngularJS</h3>
+                <p>Framework front-end para construir aplicações web dinâmicas e escaláveis</p>
+              </TechCard>
+
+              <TechCard>
                 <TechIcon color="#02569B"><SiFlutter /></TechIcon>
                 <h3>Flutter</h3>
                 <p>Framework para desenvolvimento multiplataforma</p>
@@ -152,6 +156,12 @@ export function Home() {
                 <TechIcon color="#9B4F96"><TbBrandCSharp /></TechIcon>
                 <h3>C#</h3>
                 <p>Desenvolvimento de aplicações backend com .NET</p>
+              </TechCard>
+
+              <TechCard>
+                <TechIcon color="#3178C6"><SiTypescript /></TechIcon>
+                <h3>Typescript</h3>
+                <p>Superset do JavaScript que adiciona tipagem estática ao código</p>
               </TechCard>
 
               <TechCard>

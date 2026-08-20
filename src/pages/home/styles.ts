@@ -195,7 +195,7 @@ export const TechsSection = styled.div`
 
 export const TechsSectionLineOne = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2rem;
   justify-content: center;
   width: 100%;
@@ -211,7 +211,7 @@ export const TechsSectionLineOne = styled.div`
 
 export const TechsSectionLineTwo = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2rem;
   justify-content: center;
   width: 100%;
