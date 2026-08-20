@@ -199,6 +199,14 @@ export const TechsSectionLineOne = styled.div`
   gap: 2rem;
   justify-content: center;
   width: 100%;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const TechsSectionLineTwo = styled.div`
@@ -207,6 +215,14 @@ export const TechsSectionLineTwo = styled.div`
   gap: 2rem;
   justify-content: center;
   width: 100%;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const TechCard = styled.div`
@@ -236,11 +252,27 @@ export const ProjectsSection = styled(Section)`
 `;
 
 export const ProjectGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, minmax(380px, 1fr));
+  display: flex;
   gap: 2rem;
-  justify-content: center;
   width: 100%;
+  overflow-x: auto;
+  justify-content: center;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+
+  & > * {
+    flex: 0 0 min(380px, calc(100% - 2rem));
+    scroll-snap-align: start;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    justify-content: flex-start;
+
+    & > * {
+      flex-basis: 100%;
+    }
+  }
 `;
 
 export const ProjectCard = styled.div`
