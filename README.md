@@ -5,6 +5,7 @@ Portfólio pessoal de **Felipe Maciel**, desenvolvedor Fullstack (Web e Mobile).
 A página contém as seguintes seções:
 
 - **Sobre** — breve apresentação e formação (Ciência da Computação);
+- **Experiência** — histórico profissional (Conceito Tecnologia LTDA.);
 - **Tecnologias** — stack e linguagens utilizadas;
 - **Projetos** — projetos pessoais e acadêmicos;
 - **Contato** — formas de contato (GitHub, LinkedIn, e-mail).
