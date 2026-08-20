@@ -1,4 +1,4 @@
-import { Container, Header, HeroSection, Button, AboutSection, AboutDescription, EducationItem, TechnologiesSection, TechsSection, TechsSectionLineOne, TechsSectionLineTwo, TechCard, TechIcon, ProjectsSection, ProjectGrid, ProjectCard, ContactSection, Footer } from "./styles";
+import { Container, Header, HeroSection, Button, AboutSection, AboutDescription, EducationItem, ExperienceSection, ExperienceItem, TechnologiesSection, TechsSection, TechsSectionLineOne, TechsSectionLineTwo, TechCard, TechIcon, ProjectsSection, ProjectGrid, ProjectCard, ContactSection, Footer } from "./styles";
 
 import { SiDotnet, SiFlutter, SiTypescript, SiDart, SiLinkedin, SiGmail } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
@@ -21,6 +21,7 @@ export function Home() {
         <div className="container header-content">
           <nav>
             <a href="#about">Sobre</a>
+            <a href="#experiencia">Experiência</a>
             <a href="#tech">Tecnologias</a>
             <a href="#projects">Projetos</a>
             <a href="#contact">Contato</a>
@@ -117,6 +118,28 @@ export function Home() {
         </div>
       </AboutSection>
 
+      <ExperienceSection id="experiencia">
+        <div className="container">
+          <div className="section-title">
+            <h2>Experiência Profissional</h2>
+            <div className="divider"></div>
+          </div>
+
+          <ExperienceItem>
+            <h3>Desenvolvedor Full Stack</h3>
+            <div className="company">Conceito Tecnologia LTDA. · Bahia, Brasil (Remoto)</div>
+            <div className="period">Jun/2025 - Presente · Tempo integral · 1 ano e 2 meses</div>
+            <ul>
+              <li>Atuação no desenvolvimento e manutenção de sistemas corporativos utilizando um ecossistema diversificado de tecnologias.</li>
+              <li><strong>Desenvolvimento Web (.NET + Angular):</strong> Responsável pela construção e evolução de funcionalidades em sistemas web, desenvolvendo APIs em C# com ASP.NET Core e interfaces dinâmicas com Angular e TypeScript.</li>
+              <li><strong>Aplicações Mobile (Flutter):</strong> Participação no desenvolvimento de aplicativos multiplataforma, integrando com APIs REST e gerenciando estados da aplicação.</li>
+              <li><strong>Manutenção de Legado (Delphi):</strong> Atuei na correção e evolução de sistemas críticos escritos em Delphi, garantindo a continuidade dos serviços enquanto a empresa planejava a transição para novas arquiteturas.</li>
+              <li><strong>Metodologia Ágil:</strong> Colaboração com times multidisciplinares em regime remoto, utilizando Scrum para planejamento e entrega de sprints.</li>
+            </ul>
+          </ExperienceItem>
+        </div>
+      </ExperienceSection>
+
       <TechnologiesSection id="tech">
         <div className="container">
           <div className="section-title">
@@ -134,7 +157,7 @@ export function Home() {
 
               <TechCard>
                 <TechIcon color="#E40035"><FaAngular /></TechIcon>
-                <h3>AngularJS</h3>
+                <h3>Angular</h3>
                 <p>Framework front-end para construir aplicações web dinâmicas e escaláveis</p>
               </TechCard>
 

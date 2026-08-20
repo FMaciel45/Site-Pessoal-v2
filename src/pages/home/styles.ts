@@ -182,6 +182,45 @@ export const EducationItem = styled.div`
   }
 `;
 
+export const ExperienceSection = styled(Section)`
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_COLOR2};
+`;
+
+export const ExperienceItem = styled.div`
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_COLOR};
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid ${({ theme }) => theme.COLORS.ACCENT};
+  font-size: 1.05rem;
+
+  h3 {
+    color: ${({ theme }) => theme.COLORS.ACCENT};
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  .company {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .period {
+    opacity: 0.8;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+`;
+
 export const TechnologiesSection = styled(Section)`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_COLOR};
 `;
