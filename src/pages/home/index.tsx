@@ -11,8 +11,6 @@ import profilePicture from "../../assets/profile.jpeg";
 import IESBLogo from "../../assets/iesb_logo.jpeg";
 import RocketseatLogo from "../../assets/rocket.jpg";
 import CTJLogo from "../../assets/ctj.jpg";
-import FoodEx from "../../assets/FoodEx.png";
-import RocketN from "../../assets/RocketN.png";
 import Site from "../../assets/site.png";
 import CashFlow from "../../assets/cashflowprint.png";
 
@@ -183,44 +181,6 @@ export function Home() {
 
             <ProjectCard>
               <div className="project-image">
-                <img src={FoodEx} alt="" />
-              </div>
-              <div className="project-content">
-                <h3>Food Explorer</h3>
-                <div className="project-tech">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>SQLite</span>
-                </div>
-                <p>Projeto pessoal fullstack Web para pedidos em um restaurante fictício. Desenvolvido com NodeJS, ReactJS e JavaScript, com a utilização de SQLite para armazenamento local de dados.</p>
-                <div className="project-buttons">
-                  <Button variant="secondary">Repositório Frontend</Button>
-                  <Button variant="secondary">Repositório Backend</Button>
-                </div>
-              </div>
-            </ProjectCard>
-
-            <ProjectCard>
-              <div className="project-image">
-                <img src={RocketN} alt="" />
-              </div>
-              <div className="project-content">
-                <h3>Rocket Notes</h3>
-                <div className="project-tech">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>SQLite</span>
-                </div>
-                <p>Projeto pessoal fullstack Web para armazenamento de notas/lembretes pessoais. Desenvolvido com NodeJS, ReactJS e JavaScript e utilizado SQLite para armazenamento local de dados.</p>
-                <div className="project-buttons">
-                  <Button variant="secondary">Repositório Frontend</Button>
-                  <Button variant="secondary">Repositório Backend</Button>
-                </div>
-              </div>
-            </ProjectCard>
-
-            <ProjectCard>
-              <div className="project-image">
                 <img src={CashFlow} alt="" />
               </div>
               <div className="project-content">
@@ -229,16 +189,16 @@ export function Home() {
                   <span>C#</span>
                   <span>.NET</span>
                   <span>MySQL</span>
-                  <span>Dart</span>
-                  {/*<span>Flutter</span>
-                  <span>Firebase</span>*/}
-
                 </div>
                 <p>Projeto pessoal de aplicação backend para gerenciamento de fluxo de caixa. Desenvolvido com ASP.NET Core (C#) e utilizado MySQL para o armazenamento de dados.</p>
-                {/*<p>Projeto pessoal fullstack mobile para controle de despesas pessoais e fluxo de caixa. Desenvolvido com ASP.NET Core (C#) e Flutter e utilizado MySQL para armazenamento de dados.</p>*/}
                 <div className="project-buttons">
-                  {/*<Button variant="secondary">Repositório Frontend</Button>*/}
-                  <Button variant="secondary">Repositório Backend</Button>
+                  <Button
+                    as="a"
+                    href="https://github.com/FMaciel45/CashFlow-API-Backend"
+                    target="_blank"
+                    rel="noreferrer"
+                    variant="secondary"
+                  >Repositório Backend</Button>
                 </div>
               </div>
             </ProjectCard>
@@ -256,7 +216,13 @@ export function Home() {
                 </div>
                 <p>Projeto de site com meu histórico acadêmico e profissional, portfólio pessoal e minhas informações de contato. Desenvolvido com React, TypeScript e a biblioteca Styled Components para estilização.</p>
                 <div className="project-buttons">
-                  <Button variant="secondary">Ver projeto</Button>
+                  <Button
+                    as="a"
+                    href="https://github.com/FMaciel45/Site-Pessoal-v2"
+                    target="_blank"
+                    rel="noreferrer"
+                    variant="secondary"
+                  >Repositório Frontend</Button>
                 </div>
               </div>
             </ProjectCard>
